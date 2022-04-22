@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*======================================
+|             Declaration
+|     font-family: 'Jost', sans-serif;
+========================================*/
+:root {
+    --green: #00642E;
+    --red: #ED1B24;
+    --yellow: #ffef33;
+}
+body {
+    font-family: 'Jost', sans-serif;
+}
+button, button:hover, button:focus, button:active,
+.btn, .btn:hover, .btn:focus, .btn:active,
+input, input:hover, input:focus, input:active,
+.form-control, .form-control:hover, .form-control:focus, .form-control:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+a {
+    text-decoration: none;
+}
+p {
+    color: #333;
+}
+a, p {
+    font-weight: 400;
+}
+.m-text-yellow {color: #ffef33;}
+/*======================================
+|                 Header
+========================================*/
+
+/*///////////// Top Menu ////////////// */
+#header .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+#header .content-box {
+    background-color: #00642E;
+}
+.header-content-box ul li a {
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.header-content-box ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.header-content-box ul li a.m-text-yellow {
+    color: #ffef33;
+}
+.header-content-box ul li a.m-text-yellow:hover {
+    color: #ffef33;
+}
+.header-content-box ul li.nav-item .dropdown button {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+.header-content-box ul li.nav-item .dropdown button::after {display: none;}
+.header-content-box ul li.nav-item .dropdown button i {
+    font-size: 11px;
+}
+
+/*///////////// Image Logo & Search Box ////////////// */
+#header .big-logo img {
+    height: 120px;
+}
+#header .header-search-form form {
+    position: relative;
+}
+#header .header-search-form form input {
+    height: 40px;
+    border-radius: 0;
+}
+#header .header-search-form form input:focus {
+    border-color: #707070;
+}
+#header .header-search-form form button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #197fa6;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*///////////// Menu ////////////// */
+#header .header-menu {
+    background-color: #00642E;
+}
+#header .header-menu .dropdown {
+    width: 100%;
+}
+#header .header-menu .dropdown button {
+    width: 100%;
+    color: #fff;
+    border-radius: 0;
+    transition: .2s ease;
+}
+#header .header-menu .dropdown button:hover,
+#header .header-menu .dropdown button:focus,
+#header .header-menu .dropdown button:active {
+    background-color: #ED1B24;
+}
+#header .header-menu .dropdown button i {
+    font-size: 11px;
+}
+#header .header-menu .dropdown button::after {
+    display: none;
+}
+#header .header-menu .dropdown .dropdown-menu {
+    border-radius: 0;
+}
+#header .header-menu .dropdown .dropdown-menu a.dropdown-item:hover {
+    background-color: #fff;
+    color: #ED1B24;
+    text-decoration: underline;
+}
+#header .header-menu .dropdown .dropdown-menu a.dropdown-item i {
+    font-size: 11px;
+    display: block;
+    float: right;
+    line-height: 24px;
+}

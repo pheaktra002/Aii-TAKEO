@@ -1,18 +1,72 @@
 *, html {margin: 0; padding: 0; box-sizing: border-box;}
-
-/*=====================================
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #f1f1f1;
+}
+/*======================================
 |             Declaration
+|     font-family: 'Jost', sans-serif;
 ========================================*/
 :root {
     --simple-blue: #197fa6;
 }
-.header {
+.dFlex {display: flex;}
+.justifyContent-center {justify-content: center;}
+.justifyContent-around {justify-content: space-around;}
+.justifyContent-between {justify-content: space-between;}
+.justifyContent-start {justify-content: start;}
+.justifyContent-end {justify-content: end;}
+.alignItems-center {align-items: center;}
+.w-100per {width: 100%;}
+.h-100per {height: 100%;}
+.text-center {text-align: center;}
+
+/*======================================
+|             General Style
+========================================*/
+.content-box {
+    padding: 0 300px;
+}
+a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #707070;
+}
+p {
+    font-weight: 400;
+}
+ul {
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+/*========== Buttont ===========*/
+.btn-general {
+    background-color: transparent;
+    border: 1px;
+    border-style: solid;
+    border-radius: 6px;
+}
+.btn-white {
+    border-color: #fff;
+}
+.btn-white:hover, .btn-white:focus {
+    color: #197fa6;
+    background-color: #fff;
+
+}
+
+/*======================================
+|                Header
+========================================*/
+.bg-header {
     width: 100%;
     height:50px;
     background-color: #197fa6;
-}
-.content-box {
-    padding: 0 100px;
 }
 .nav-list li {
     list-style: none;
@@ -22,4 +76,167 @@
 }
 .nav-list li a {
     padding: 8px;
+    color: #fff;
+    text-decoration: underline;
 }
+.nav-list li:hover a {
+    text-decoration: none;
+}
+.nav-list li a i {
+    font-size: 11px;
+}
+
+/*========== Header Logo ===========*/
+.content-box-header-logo {
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+}
+.header-logo .logo img {
+    height: 120px;
+}
+
+/*========== Menu ===========*/
+.content-box-header-menu {
+    height: 40px;
+    background-color: #fff;
+}
+.menu-content-box {
+    background-color: #197fa6;
+}
+/*======================================
+|            Menu Dropdown
+========================================*/
+.content-box-header-menu .nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.content-box-header-menu .nav-list a {
+    text-transform: capitalize;
+    color: #fff;
+}
+.content-box-header-menu .nav-list a i {font-size: 11px;}
+
+.nav-list .nav-list-item {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+.nav-list .nav-list-item:hover {
+    background-color: #0f6586;
+}
+.nav-list-item ul.sub-nav-list {
+    background-color: #E3E3E3;
+    position: absolute;
+    z-index: 4;
+    top: 40px;
+    left: 0;
+    margin: 0;
+    line-height: 35px;
+    transition: .3s ease;
+    padding: 10px 0 30px 0;
+    border: 1px solid #dadada;
+    border-top: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, 
+                rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.nav-list-item ul.sub-nav-list li {
+    display: block;
+    clear: both;
+    width: 320px;
+    text-align: left;
+    transition: .2s ease;
+    padding-left: 16px;
+}
+.nav-list-item ul.sub-nav-list li a {
+    text-decoration: none;
+    color: #333;
+    transition: .2s ease;
+}
+.nav-list-item ul.sub-nav-list li a i {
+    display: block;
+    float: right;
+    margin-right: 16px;
+    line-height: 35px;
+}
+.nav-list-item ul.sub-nav-list li:hover {
+    padding-left: 24px;
+}
+.nav-list-item ul.sub-nav-list li:hover a {
+    color: #289bc9;
+    text-decoration: underline;
+}
+
+.nav-list-item ul.sub-nav-list li.has-sub-nav-one ul {
+    position: absolute;
+    left: 320px;
+    height: 100%;
+    top: 0;
+    background-color: #E3E3E3;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, 
+                rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.nav-list-item ul.sub-nav-list li.has-sub-nav-one ul li a {
+    color: #333;
+    text-decoration: none;
+}
+.nav-list-item ul.sub-nav-list li.has-sub-nav-one ul li:hover a {
+    color: #289bc9;
+    text-decoration: underline;
+}
+
+/*======================================
+|            Header Slide
+========================================*/
+.header-slide-items .slide-item {
+    position: relative;
+}
+.header-slide-items .slide-item .slide-content-title {
+    position: absolute;
+    text-align: center;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header-slide-items .slide-item .slide-content-title h1 {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.header-slide-items .slide-item .slide-content-title p {
+    color: #fff;
+    font-size: 20px;
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.header-slide-items .slide-item .slide-content-title button {
+    padding: 8px 16px;
+    background-color: #197fa6;
+    border: 1px solid #0f6586;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+.header-slide-items .slide-item .slide-content-title button:hover {
+    background-color: #0f6586;
+}
+.header-slide-items .slide-item img {
+    width: 100%;
+    max-height: 700px;
+}
+.owl-theme .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
