@@ -14,6 +14,7 @@
 }
 body {
     font-family: 'Jost', sans-serif;
+    background-color: #f1f1f1;
 }
 button, button:hover, button:focus, button:active,
 .btn, .btn:hover, .btn:focus, .btn:active,
@@ -21,6 +22,7 @@ input, input:hover, input:focus, input:active,
 .form-control, .form-control:hover, .form-control:focus, .form-control:active {
     outline: none !important;
     box-shadow: none !important;
+    border-radius: 0 !important;
 }
 a {
     text-decoration: none;
@@ -32,6 +34,17 @@ a, p {
     font-weight: 400;
 }
 .m-text-yellow {color: #ffef33;}
+.content-title {
+    text-align: center;
+}
+.content-box {
+    padding: 60px 0 0 0;
+}
+.btn-general {
+    background-color: #c2c2c2;
+    border-radius: 0;
+    text-transform: capitalize;
+}
 /*======================================
 |                 Header
 ========================================*/
@@ -41,7 +54,7 @@ a, p {
     margin: 0;
     padding: 0;
 }
-#header .content-box {
+#header .content-header {
     background-color: #00642E;
 }
 .header-content-box ul li a {
@@ -104,6 +117,7 @@ a, p {
     color: #fff;
     border-radius: 0;
     transition: .2s ease;
+    text-transform: capitalize;
 }
 #header .header-menu .dropdown button:hover,
 #header .header-menu .dropdown button:focus,
@@ -119,6 +133,9 @@ a, p {
 #header .header-menu .dropdown .dropdown-menu {
     border-radius: 0;
 }
+#header .header-menu .dropdown .dropdown-menu a.dropdown-item {
+    text-transform: capitalize;
+}
 #header .header-menu .dropdown .dropdown-menu a.dropdown-item:hover {
     background-color: #fff;
     color: #ED1B24;
@@ -129,4 +146,128 @@ a, p {
     display: block;
     float: right;
     line-height: 24px;
+}
+#header .header-menu .dropdown .dropdown-menu li.has-sub-menu ul li {
+    list-style: none;
+}
+#header .header-menu .dropdown .dropdown-menu li.has-sub-menu ul li a {
+    color: #707070;
+    text-transform: capitalize;
+    display: block;
+    width: 100%;
+}
+#header .header-menu .dropdown .dropdown-menu li.has-sub-menu ul li a:hover {
+    color: #ED1B24;
+    text-decoration: underline;
+}
+/*///////////// Carousel ////////////// */
+.carousel .carousel-inner .carousel-item h3 {
+    font-size: 72px;
+    text-shadow: 1px 1px 2px #000;
+}
+.carousel .carousel-inner .carousel-item p {
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #000;
+    color: #fff;
+}
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50% !important;
+}
+
+#article article {
+    position: relative;
+    height: 320px;
+}
+#article article img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+#article article .article-text-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.8) 100%);
+}
+#article article .article-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0 16px;
+    
+}
+#article article .article-text h3,
+#article article .article-text p,
+#article article .article-text pre {
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+
+.nav-tabs {
+    border-bottom: 0 !important;
+}
+.nav-tabs button {
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #707070;
+    background-color: #f1f1f1 !important;
+    border-bottom: 5px solid #707070 !important;
+}
+.nav-tabs button.nav-link.active {
+    background-color: #c2c2c2 !important;
+    border-bottom: 5px solid #ffc20d !important;
+}
+.nav-tabs button:hover {
+    color: #707070;
+}
+.tab-content {
+    padding: 30px 0;
+}
+.tab-content .tab-pane {
+    padding: 16px;
+    vertical-align: top;
+}
+.tab-content .tab-pane .row .col-md-6 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.tab-content .tab-pane .text p {
+    font-size: 18px;
+    padding: 30px 0;
+}
+/* .tab-content .tab-pane .text button {
+    background-color: #c2c2c2 !important;
+} */
+.bg-general {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.bg-paralax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-tabs-content {
+    background: url('../img/background-board/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.watch-youtube {
+    padding: 30px 0;
+}
+.watch-youtube p {
+    font-size: 18px;
 }
