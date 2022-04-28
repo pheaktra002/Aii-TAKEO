@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bottstrap 5.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <style>
+        *, html {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(30, 45, 73);
+        }
+        #rippleBtn {
+            width: 200px;
+            height: 50px;
+        }
+        .demo-card {
+            background-color: #fff;
+            transform: scale(1);
+            transition: transform .5s ease;
+        }
+        .demo-card:hover {
+            
+            transform: scale(1.1);
+        }
+        .demo-card a {
+            text-decoration: none;
+        }
+        .demo-card .demo-card-img {
+            height: 200px;
+        }
+        .demo-card .demo-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .demo-card .demo-card-body .demo-card-content h3 {
+            padding: 8px;
+            color: #707070;
+        }
+        .demo-card .demo-card-body .demo-card-content button.demo-card-btn {
+            border: none;
+            width: 100%;
+            height: 40px;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: rgb(230, 39, 39);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3">
+                <div class="demo-card">
+                    <a href="#">
+                        <div class="demo-card-img">
+                            <img src="img/graduation.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="demo-card-body">
+                            <div class="demo-card-content">
+                                <h3>Hello World</h3>
+                                <button class="demo-card-btn">read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="demo-card">
+                    <a href="#">
+                        <div class="demo-card-img">
+                            <img src="img/graduation.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="demo-card-body">
+                            <div class="demo-card-content">
+                                <h3>Hello World</h3>
+                                <button class="demo-card-btn">read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="demo-card">
+                    <a href="#">
+                        <div class="demo-card-img">
+                            <img src="img/graduation.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="demo-card-body">
+                            <div class="demo-card-content">
+                                <h3>Hello World</h3>
+                                <button class="demo-card-btn">read more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript">
+        
+    </script>
+</body>
+
+</html>
