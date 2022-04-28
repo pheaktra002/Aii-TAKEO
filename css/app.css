@@ -139,17 +139,17 @@ a, p {
 
 } */
 .navbar .megamenu {
-    height: 400px;
+    min-height: 400px;
 }
 .navbar .megamenu .col-megamenu h5.title {
     text-transform: capitalize;
-    padding: 16px 16px 0 16px;
+    padding: 16px 16px 0 32px;
 }
 .navbar .megamenu .col-megamenu .list-unstyled li a {
     color: #333;
     display: block;
     width: 100%;
-    padding: 4px 16px;
+    padding: 4px 16px 4px 32px;
     text-transform: capitalize;
 }
 .navbar .megamenu .col-megamenu .list-unstyled li a:hover {
