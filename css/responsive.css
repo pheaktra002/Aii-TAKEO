@@ -1,18 +1,99 @@
-#top-nav-big {
+.big-sc {
     display: block;
 }
-#top-nav-small {
+
+.navbar .small-sc .navbar-brand,
+.navbar .small-sc button,
+.navbar .small-sc a {
     display: none;
 }
-/* @media screen and (max-width: 991px){
-    #top-nav-big {
+
+.navbar ul.navbar-nav .nav-item:nth-child(1),
+.navbar ul.navbar-nav .nav-item:nth-child(2),
+.navbar ul.navbar-nav .nav-item:nth-child(3),
+.navbar ul.navbar-nav .nav-item:nth-child(4),
+.navbar ul.navbar-nav .nav-item:nth-child(5),
+.navbar ul.navbar-nav .nav-item:nth-child(6),
+.navbar ul.navbar-nav .nav-item:last-child {
+    display: none;
+}
+
+.content-header {
+    display: block;
+}
+@media screen and (max-width: 991px) {
+    .big-sc {
         display: none;
     }
-    #top-nav-small {
+
+    .navbar .small-sc .navbar-brand,
+    .navbar .small-sc button,
+    .navbar .small-sc a {
+        display: block;
+        float: left;
+    }
+
+    .navbar .small-sc .navbar-brand img {
+        height: 60px;
+    }
+
+    .navbar.bg-green {
+        background-color: #fff;
+    }
+
+    .navbar ul.navbar-nav .nav-item:nth-child(1),
+    .navbar ul.navbar-nav .nav-item:nth-child(2),
+    .navbar ul.navbar-nav .nav-item:nth-child(3),
+    .navbar ul.navbar-nav .nav-item:nth-child(4),
+    .navbar ul.navbar-nav .nav-item:nth-child(5),
+    .navbar ul.navbar-nav .nav-item:nth-child(6),
+    .navbar ul.navbar-nav .nav-item:last-child {
         display: block;
     }
-    .tab-content .tab-pane .row .col-md-6 {
-        padding-left: 1rem;
-        padding-right: 1rem;
+
+    .content-header {
+        display: none;
     }
-} */
+    .navbar ul.navbar-nav li.nav-item a.nav-link {
+        color: #000;
+        border-bottom: 1px solid rgba(130, 155, 175, 0.7);
+        background-color: rgba(130, 155, 175, 0.2);
+    }
+
+    .navbar ul.navbar-nav li.nav-item a.nav-link:hover,
+    .navbar ul.navbar-nav li.nav-item a.nav-link.active {
+        background-color: rgba(130, 155, 175, 0.5);
+    }
+
+    .navbar ul.navbar-nav li.nav-item i {
+        display: block;
+        float: right;
+    }
+
+    .navbar .megamenu {
+        min-height: auto;
+    }
+
+    .navbar .megamenu .col-megamenu-img {
+        display: none;
+    }
+
+    .navbar .megamenu .col-megamenu h5.title {
+        text-transform: capitalize;
+        padding: 0px 16px 0 32px
+    }
+
+    .carousel .carousel-inner .carousel-item {
+        width: 100%;
+        height: 500px;
+    }
+
+    .carousel .carousel-inner .carousel-item h3 {
+        font-size: 48px;
+        text-shadow: 1px 1px 2px #000;
+    }
+
+    #footer .copy-right .dropdown {
+        display: none;
+    }
+}
